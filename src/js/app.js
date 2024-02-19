@@ -39,14 +39,8 @@ function render(variables = {}) {
     let adress = `${variables.city}, ${variables.country}`;
     return adress;
   };
-  const yourSocialMaedia = yourSocial => {
-    let socialMedia = "4geeksacademy";
-    if (yourSocial == null) socialMedia = "4geeksacademy";
-    else socialMedia = yourSocial;
-    return socialMedia;
-  };
-
-  // reset the website body with the new html output
+  
+    // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
